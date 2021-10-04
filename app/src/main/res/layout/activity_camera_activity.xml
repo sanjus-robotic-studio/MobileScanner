@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#126b59"
+    tools:context=".camera_activity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/camera_capture_button"
+        android:layout_width="72dp"
+        android:layout_height="111dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="176dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerVertical="true"
+        android:backgroundTint="#25c4a4"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_camera_24"
+        app:fabSize="normal"/>
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="569dp" />
+
+
+</RelativeLayout>
